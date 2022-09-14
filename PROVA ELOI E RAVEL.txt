@@ -1,0 +1,63 @@
+#PROVA
+#14/09/2022
+#Alunos: Eloi de Barros Marques
+#        Ravel Cezar Cavalcanti da Cruz
+
+
+
+import sqlite3
+
+class vaga:
+  def __init__(self, titulo, salario, dataCriacao):
+    self.titulo = titulo
+    self.salario = salario
+    self.dataCriacao = dataCriacao
+
+FrontendDeveloper = vaga('FrontendDeveloper', '4100', '14/09/2022')
+print('Nick: ' + FrontendDeveloper.titulo + '\n' + 'salario: ' + FrontendDeveloper.salario + '\n' + 'dataCriacao: ' + FrontendDeveloper.dataCriacao)
+
+
+# conecta ao banco de dados 'todo-app'
+# caso o banco não exista ele será criado
+conn = sqlite3.connect("todo-app.db")
+
+def criar_tabela_todo(): 
+    """ cria a tabela 'oportunidade' caso ela não exista """ 
+    cursor = conn.cursor()
+    conn.execute("""
+    create table if not exists oportunidade (
+        cd_oportunidade integer primary key autoincrement, 
+        oportunidade text,
+        concluido integer
+    )
+    """)
+
+def add_oportunidade(oportunidade):
+    """ adiciona uma nova oportunidade """
+    conn.execute("insert into oportunidade (oportunidade, concluido) values (?, 0)", (oportunidade, ))
+    conn.commit()
+
+def remover_oportunidade(cd_oportunidade):
+    """ remove a oportunidade da tabela """
+    conn.execute("delete from oportunidade where cd_oportunidade = ?", (cd_oportunidade, ))
+    conn.commit()
+
+def concluir_oportunidade(cd_oportunidade):
+    """ marca a oportunidade como concluida """
+    conn.execute("update oportunidade set concluido = 1 where cd_oportunidade = ?", (cd_oportunidade, ))
+    conn.commit()
+
+def get_oportunidade(): # retorna um cursor
+    """ retorna a lista de oportunidade cadastras """
+    return conn.execute("select cd_oportunidade, oportunidade, concluido from oportunidade")
+    
+    class vaga:
+  def __init__(self, titulo, salario, dataCriacao):
+    self.titulo = titulo
+    self.salario = salario
+    self.dataCriacao = dataCriacao
+
+FrontendDeveloper = vaga('FrontendDeveloper', '4100', '14/09/2022')
+print('Nick: ' + FrontendDeveloper.titulo + '\n' + 'salario: ' + FrontendDeveloper.salario + '\n' + 'dataCriacao: ' + FrontendDeveloper.dataCriacao)
+
+ 
