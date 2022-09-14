@@ -1,0 +1,34 @@
+Caros estudantes, boa noite.
+Sejam bem-vindos ao desafio da atividade prática 1 - AT1.
+
+Desafio AT1 de Python Evolux.
+Para o desafio ser válida você deve respeitar as seguintes regras:
+
+1. Enviada até 20:00 (de hoje) do dia 14/09 (Quarta-feira).
+2. Conter link para Github com o código do projeto (estando completo ou não).
+3. Conter nome completo do(a) estudante.
+4. Conter e-mail institucional do(a) estudante.
+
+Objetivo do Desafio:
+Criar um cadastro de Oportunidade de Emprego (CRUD)
+
+Funcionalidades do Projeto:
+1. Listar Todas as Vagas
+2. Cadastrar Vaga
+3. Alterar Vaga
+4. Deletar Vaga
+
+Objeto, oportunidade de emprego deverá ter no mínimo os seguintes campos:
+1. Título da Vaga (texto)
+2. Salário da Vaga (texto)
+3. Data de Criação (data)
+4. Nome da Empresa (texto)
+5. Nome Cargo (texto)
+6. Descrição da Vaga (texto longo)
+7. Status (aberta ou fechada)
+
+Tecnologias Sugeridas:
+- SQLite ou MongoDB para armazenar as vagas (conforme aplicação de exemplo: https://github.com/PyLadiesNatal/series-pyladies).
+- Consulte nosso próprio material, aqui neste repositório.
+Sucesso!
+Prof. MSc. Cloves.
