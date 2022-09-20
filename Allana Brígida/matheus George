@@ -1,0 +1,25 @@
+#Alunos: Matheus George da Luz de Brito / allana brigida de araujo Albuquerque 
+#Turma: 2 modulo D.S 
+#DATA: 14/09 
+#GmailInstitucional: mglb@etepd.com / abaa@etepd.com
+
+class Empresa:
+
+ def __init__(self,titulo_vaga, salario_vaga, data_criacao_vaga, nome_empresa , nome_cargo, descricao_vaga , status):
+    self.titulo_vaga = titulo_vaga
+    self.salario_vaga = salario_vaga
+    self.data_criacao_vaga = data_criacao_vaga
+    self.nome_empresa = nome_empresa
+    self.nome_cargo = nome_cargo 
+    self.descricao_vaga = descricao_vaga
+    self.status = status 
+
+MMSolucoes = Empresa('Estagio', '1.200', '14/09','MMSolucoes','DevJr','Desenvolver sistemas','aberto')
+Ablabla = Empresa('Designer', '1.400', '11/09','Ablabla','Designer','Criação de Artes','fechado')
+silvinhoDate = Empresa('arquiteto de software', '7.000', '08/09' ,'silvinhoDate','DevSenior', 'Engenheiro de software', 'aberto')
+
+
+print("\n")
+print( 'titulo: ' + MMSolucoes.titulo_vaga + '\n' + 'salario: ' + MMSolucoes.salario_vaga+'\n' + 'Data de Criação: '+  MMSolucoes.data_criacao_vaga+'\n' +'Nome da empresa: ' + MMSolucoes.nome_empresa + '\n' + 'nome do Cargo: ' + MMSolucoes.nome_cargo+ '\n' +'descrição da vaga: '+ MMSolucoes.descricao_vaga +'\n' + 'status da vaga: '+ MMSolucoes.status)
+print( 'titulo: ' + Ablabla.titulo_vaga + '\n' + 'salario: ' + Ablabla.salario_vaga+'\n' + 'Data de Criação: '+  Ablabla.data_criacao_vaga+'\n' +'Nome da empresa: ' + Ablabla.nome_empresa + '\n' + 'nome do Cargo: ' + Ablabla.nome_cargo+ '\n' +'descrição da vaga: '+ Ablabla.descricao_vaga +'\n' + 'status da vaga: '+ Ablabla.status)
+print( 'titulo: ' + silvinhoDate.titulo_vaga + '\n' + 'salario: ' + silvinhoDate.salario_vaga+'\n' + 'Data de Criação: '+  silvinhoDate.data_criacao_vaga+'\n' +'Nome da empresa: ' + silvinhoDate.nome_empresa + '\n' + 'nome do Cargo: ' + silvinhoDate.nome_cargo+ '\n' +'descrição da vaga: '+ silvinhoDate.descricao_vaga +'\n' + 'status da vaga: '+ silvinhoDate.status)
