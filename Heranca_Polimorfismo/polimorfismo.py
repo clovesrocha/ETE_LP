@@ -28,7 +28,7 @@ class Animal():
 # Polimorfismo - Code 2 desenvolva o restante no desafio...
 # from Animal import Animal
 # class Mamifero(Animal):
-         # classe = 'Mamifero'
+         # class = 'Mamifero'
 
 #        def __str__(self):
 #                 return super().str__() + 'Mamifero'
