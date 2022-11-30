@@ -27,3 +27,15 @@ class marinho(Animal):
 class Terrestre(Animal):
      def locomove(self):
         print("animal terrestre anda.")
+        
+        
+        
+        
+ 
+
+a1 = Aquatico('tartaruga', 30)
+a2 = Terrestre('cachorro', 15)
+print(a1.locomove())
+print(a2.locomove())
+print(a1.nome)
+
