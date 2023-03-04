@@ -56,4 +56,12 @@ class Animal:
     
     def get_species(self):
         return self.species
+#Explicando um pouco sobre essa classe, ela tem três métodos:
 
+# __init__: é o construtor da classe, que recebe dois argumentos: name e species. O construtor é responsável por inicializar os atributos name e species da instância da classe.
+
+# make_sound: é um método que imprime uma mensagem genérica indicando que o animal está fazendo um som. Essa mensagem pode ser sobrescrita em subclasses que herdam da classe Animal.
+
+# get_name e get_species: são métodos que retornam os valores dos atributos name e species, respectivamente.
+
+# Essa é uma classe básica de Animal, que pode ser estendida para outras classes mais específicas, como Cachorro, Gato, etc.
